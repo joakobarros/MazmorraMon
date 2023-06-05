@@ -24,16 +24,16 @@ public class GameManager : MonoBehaviour
     {
         if (bichos [0].GetComponent<Bichos>().speed > bichos[1].GetComponent<Bichos>().speed)
         {
-            bichos[0].GetComponent<Bichos>().Ataque ();
             bichos[0].GetComponent<Bichos>().prioridad = 1;
             bichos[1].GetComponent<Bichos>().prioridad = 0;
+            bichos[0].GetComponent<Bichos>().Ataque();
 
         }
         else
          {
-            bichos[1].GetComponent<Bichos>().Ataque();
             bichos[1].GetComponent<Bichos>().prioridad = 1; 
             bichos[0].GetComponent<Bichos>().prioridad = 0;
+            bichos[1].GetComponent<Bichos>().Ataque();
         }
         
     }

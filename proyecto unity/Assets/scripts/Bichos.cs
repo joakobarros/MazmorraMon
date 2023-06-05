@@ -16,26 +16,27 @@ public class Bichos : MonoBehaviour
     
     void Start()
     {
-        
-    }
-
-    public void Ataque()
-    {
-        //target.GetComponent<Renderer>().material.color = Color.red;
-        target.GetComponent<Bichos>().HP -= 20;
+       
     }
 
     public void FinAtaque()
     {
+        //target.GetComponent<Renderer>().material.color = Color.red;
+        //target.GetComponent<Bichos>().HP -= 20;
+    }
+   
 
+    public void Ataque()
+    {
         if (prioridad == 1)
         {
             GameManager.my.Ultimo();
         }
 
-        //target.GetComponent<Bichos>().HP -= 20;
+        target.GetComponent<Bichos>().HP -= Random.Range(15,20);
     }
     
+   
     void Update()
     {
         vida.fillAmount = (HP) / HPMax;
