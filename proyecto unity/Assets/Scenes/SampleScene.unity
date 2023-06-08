@@ -1375,7 +1375,9 @@ MonoBehaviour:
   HPMax: 100
   speed: 5
   prioridad: 0
+  bichoEscena: {fileID: 694675458}
   target: {fileID: 694675458}
+  target2: {fileID: 947359684}
   jugador: 
   vida: {fileID: 1746831234}
 --- !u!1 &694675458
@@ -1393,7 +1395,7 @@ GameObject:
   - component: {fileID: 694675463}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Bicho1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1492,8 +1494,10 @@ MonoBehaviour:
   HPMax: 100
   speed: 10
   prioridad: 0
+  bichoEscena: {fileID: 525043769}
   target: {fileID: 525043769}
-  jugador: 
+  target2: {fileID: 0}
+  jugador: 1
   vida: {fileID: 200120700}
 --- !u!1 &695319687
 GameObject:
@@ -2197,7 +2201,7 @@ GameObject:
   - component: {fileID: 947359689}
   m_Layer: 0
   m_Name: r
-  m_TagString: Untagged
+  m_TagString: Bicho2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2297,8 +2301,10 @@ MonoBehaviour:
   HPMax: 100
   speed: 10
   prioridad: 0
+  bichoEscena: {fileID: 525043769}
   target: {fileID: 525043769}
-  jugador: 
+  target2: {fileID: 0}
+  jugador: 2
   vida: {fileID: 1419057358}
 --- !u!1 &963194225
 GameObject:

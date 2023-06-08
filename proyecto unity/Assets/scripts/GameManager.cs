@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
          {
             bichos[1].GetComponent<Bichos>().prioridad = 1; 
             bichos[0].GetComponent<Bichos>().prioridad = 0;
-            bichos[1].GetComponent<Bichos>().Ataque();
+            bichos[1].GetComponent<Bichos>().Ataque2();
         }
         
     }
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
 
         if (bichos[1].GetComponent<Bichos>().prioridad == 0)
         {
-            bichos[1].GetComponent<Bichos>().Ataque();
+            bichos[1].GetComponent<Bichos>().Ataque2();
         }
     }
        
