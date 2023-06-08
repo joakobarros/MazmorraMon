@@ -10,6 +10,7 @@ public class Bichos : MonoBehaviour
     public float speed;
     public int prioridad;
     public GameObject target;
+    //public GameObject target2;
     public string jugador;
     public Image vida;
    
@@ -34,6 +35,7 @@ public class Bichos : MonoBehaviour
         }
 
         target.GetComponent<Bichos>().HP -= Random.Range(15,20);
+        //target2.GetComponent<Bichos>().HP -= Random.Range(15, 20);
     }
     
    
