@@ -37,7 +37,16 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\scripts\Bichos.cs" />
+     <Compile Include="Assets\scripts\EstadoAlerta.cs" />
+     <Compile Include="Assets\scripts\EstadoNormal.cs" />
+     <Compile Include="Assets\scripts\EstadoPersecucion.cs" />
+     <Compile Include="Assets\scripts\Player.cs" />
      <Compile Include="Assets\scripts\GameManager.cs" />
+     <Compile Include="Assets\scripts\Vision.cs" />
+     <Compile Include="Assets\scripts\MaquinaDeEstados.cs" />
+     <Compile Include="Assets\scripts\NavMesh.cs" />
+     <Compile Include="Assets\scripts\Controller.cs" />
+     <Compile Include="Assets\scripts\DNA.cs" />
     <Reference Include="UnityEngine">
         <HintPath>T:\unity\2021.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
