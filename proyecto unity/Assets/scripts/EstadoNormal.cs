@@ -9,8 +9,6 @@ public class EstadoNormal: MonoBehaviour
     private NavMesh navMesh;
     private MaquinaDeEstados maquinaDeEstados;
     private Vision vision;
-    
-    
     private int siguienteWayPoint;
 
     void Awake()
@@ -33,7 +31,7 @@ public class EstadoNormal: MonoBehaviour
 
         if (navMesh.HemosLlegado())
         {
-            siguienteWayPoint = (siguienteWayPoint + 1) % WayPoints.Length;
+            siguienteWayPoint = Random.Range(0,6);
             ActualizarWayPointDestino();
         }
 
@@ -46,7 +44,7 @@ public class EstadoNormal: MonoBehaviour
 
     void ActualizarWayPointDestino()
     {
-        navMesh.ActualizarPuntoDestinoNMA(WayPoints[siguienteWayPoint].position);
+        navMesh.ActualizarPuntoDestinoNMA(WayPoints[Random.Range(0, WayPoints.Length)].position);
     }
 
     public void OnTriggerEnter (Collider other)
