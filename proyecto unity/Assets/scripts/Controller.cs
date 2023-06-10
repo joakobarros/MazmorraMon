@@ -5,16 +5,18 @@ using UnityEngine.UI;
  
 public class Controller : MonoBehaviour
 {
-    public int populationSize = 50;
+    public int populationSize = 4;
     public GameObject creaturePrefab;
     public List<GameObject> population;
-    public float populationLifetime = 5.0f;
+    public float populationLifetime = 50.0f;
     public int mutationRate; // Chance of a mutation occuring, 0 - 100%
  
     public Text generationText;
     private int currentGeneration = 1;
     public Text timeText;
     private float lifetimeLeft;
+
+    public Transform spawnPoint;
  
     // Start is called before the first frame update
     void Start()
@@ -29,17 +31,6 @@ public class Controller : MonoBehaviour
         lifetimeLeft = populationLifetime;
     }
  
-    // Update is called once per frame
-    void Update()
-    {
-        // Update the text showing what generation we're on
-        generationText.text = "Generation " + currentGeneration;
- 
-        // Perform a countdown, showing the lifetime of the current population, reset on breeding
-        lifetimeLeft -= Time.deltaTime;
-        timeText.text = "Time " + (lifetimeLeft).ToString("0");
-    }
- 
     /**
      * Initialises the population
      */
@@ -47,11 +38,9 @@ public class Controller : MonoBehaviour
     {
         for (int i = 0; i < populationSize; i++)
         {
-            // Choose a random position for the creature to appear
-            Vector2 pos = new Vector2(Random.Range(-9, 9), Random.Range(-4.5f, 4.5f));
- 
+
             // Instantiate a new creature
-            GameObject creature = Instantiate(creaturePrefab, pos, Quaternion.identity);
+            GameObject creature = Instantiate(creaturePrefab, spawnPoint.position, Quaternion.identity);
  
             // Set the colour of the creature
             DNA creatureDNA = creature.GetComponent<DNA>();
@@ -59,7 +48,7 @@ public class Controller : MonoBehaviour
             creatureDNA.g = Random.Range(0.0f, 1.0f);
             creatureDNA.b = Random.Range(0.0f, 1.0f);
  
-            creature.GetComponent<SpriteRenderer>().color = new Color(creatureDNA.r, creatureDNA.g, creatureDNA.b);
+            creature.GetComponent<Renderer>().material.color = new Color(creatureDNA.r, creatureDNA.g, creatureDNA.b);
  
             // Add the creature to the population
             population.Add(creature);
@@ -98,10 +87,8 @@ public class Controller : MonoBehaviour
     // Breeds a new creature using the DNA of the two parents
     private GameObject Breed(GameObject parent1, GameObject parent2)
     {
-        Vector2 pos = new Vector2(Random.Range(-9, 9), Random.Range(-4.5f, 4.5f));
- 
         // Create a new creature and get a reference to its DNA
-        GameObject offspring = Instantiate(creaturePrefab, pos, Quaternion.identity);
+        GameObject offspring = Instantiate(creaturePrefab, spawnPoint.position, Quaternion.identity);
         DNA offspringDNA = offspring.GetComponent<DNA>();
  
         // Get the parents DNA
@@ -139,7 +126,7 @@ public class Controller : MonoBehaviour
             }
         }
  
-        offspring.GetComponent<SpriteRenderer>().color = new Color(offspringDNA.r, offspringDNA.g, offspringDNA.b);
+        offspring.GetComponent<Renderer>().material.color = new Color(offspringDNA.r, offspringDNA.g, offspringDNA.b);
  
         return offspring;
     }
