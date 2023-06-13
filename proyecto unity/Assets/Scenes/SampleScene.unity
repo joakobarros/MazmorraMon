@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -217,7 +217,7 @@ RectTransform:
   m_Children:
   - {fileID: 999859928}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -320,7 +320,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &140220634
 GameObject:
@@ -665,7 +665,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 69566b365e3e4524f9195a2f11866000, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 69566b365e3e4524f9195a2f11866000, type: 3}
       propertyPath: m_LocalScale.x
@@ -681,7 +681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 69566b365e3e4524f9195a2f11866000, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -164.3
+      value: -145
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 69566b365e3e4524f9195a2f11866000, type: 3}
       propertyPath: m_LocalPosition.y
@@ -725,11 +725,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69566b365e3e4524f9195a2f11866000, type: 3}
---- !u!4 &242609751 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 69566b365e3e4524f9195a2f11866000, type: 3}
-  m_PrefabInstance: {fileID: 242609750}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &257943896
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,6 +911,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284136065}
   m_CullTransparentMesh: 1
+--- !u!1001 &309503052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 11.617
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 11.617
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 11.617
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1315
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6648678
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7469611
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 96.656
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_Name
+      value: gatofantasma
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829333093618665122, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ab77c9481cd849443a17b2a4381239f9, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e5cad2ff3ecd3143ab9685d056f2906, type: 3}
 --- !u!1 &329183300
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,6 +1025,7 @@ MonoBehaviour:
   barrasHP:
   - {fileID: 200120700}
   - {fileID: 1746831234}
+  numeroAparicion: 1
 --- !u!4 &329183302
 Transform:
   m_ObjectHideFlags: 0
@@ -966,7 +1039,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &343358930
 GameObject:
@@ -1057,7 +1130,7 @@ GameObject:
   - component: {fileID: 437137564}
   - component: {fileID: 437137563}
   m_Layer: 5
-  m_Name: bicho (1)
+  m_Name: cubo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1080,7 +1153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -132, y: 0}
+  m_AnchoredPosition: {x: -508, y: 0}
   m_SizeDelta: {x: 255.0375, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &437137563
@@ -1175,6 +1248,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 525043774}
+        m_TargetAssemblyTypeName: Bichos, Assembly-CSharp
+        m_MethodName: cambioTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 525043774}
+        m_TargetAssemblyTypeName: Bichos, Assembly-CSharp
+        m_MethodName: Ataque2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 257943896}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1236,7 +1333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.0990566, g: 0.9201988, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1373,6 +1470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 100
   HPMax: 100
+  HPActual: 0
   speed: 5
   prioridad: 0
   bichoEscena: {fileID: 694675458}
@@ -1380,6 +1478,7 @@ MonoBehaviour:
   target2: {fileID: 947359684}
   jugador: 
   vida: {fileID: 1746831234}
+  habilitado: 0
 --- !u!1 &694675458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,13 +1569,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694675458}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.74, y: -83.38, z: 1304.36}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -31.73999, y: -83.380005, z: 1304.36}
   m_LocalScale: {x: 7.4249, y: 7.4249, z: 7.4249}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &694675463
 MonoBehaviour:
@@ -1492,13 +1591,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 100
   HPMax: 100
+  HPActual: 0
   speed: 10
   prioridad: 0
-  bichoEscena: {fileID: 525043769}
+  bichoEscena: {fileID: 0}
   target: {fileID: 525043769}
   target2: {fileID: 0}
   jugador: 1
   vida: {fileID: 200120700}
+  habilitado: 0
 --- !u!1 &695319687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,18 +1964,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 437137561}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2016197304}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -2067,7 +2156,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &903965821
 GameObject:
@@ -2277,13 +2366,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947359684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.16, y: -83.06, z: 1305.83}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -30.159973, y: -83.06, z: 1305.83}
   m_LocalScale: {x: 4.3037, y: 4.4963155, z: 7.8787837}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &947359689
 MonoBehaviour:
@@ -2299,13 +2388,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 100
   HPMax: 100
+  HPActual: 0
   speed: 10
   prioridad: 0
-  bichoEscena: {fileID: 525043769}
+  bichoEscena: {fileID: 0}
   target: {fileID: 525043769}
   target2: {fileID: 0}
   jugador: 2
   vida: {fileID: 1419057358}
+  habilitado: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,12 +2474,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.03230176, y: -0.8209864, z: 0.07588252, w: 0.56495994}
-  m_LocalPosition: {x: 10.044396, y: 3.5022295, z: 3.4413295}
-  m_LocalScale: {x: 0.08861436, y: 0.3839194, z: 1.3141695}
+  m_LocalPosition: {x: -17.719986, y: -79.61, z: 1317.53}
+  m_LocalScale: {x: 1.8559278, y: 7.424899, z: 20.517826}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 242609751}
-  m_RootOrder: 10
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 9.27, y: -110.779, z: 1.899}
 --- !u!1 &999859927
 GameObject:
@@ -4025,7 +4116,7 @@ GameObject:
   - component: {fileID: 2046716769}
   - component: {fileID: 2046716768}
   m_Layer: 5
-  m_Name: bicho
+  m_Name: cilindro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4048,7 +4139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -434.48126, y: 0}
+  m_AnchoredPosition: {x: 74, y: 0}
   m_SizeDelta: {x: 255.0375, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046716768
@@ -4135,6 +4226,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 525043774}
+        m_TargetAssemblyTypeName: Bichos, Assembly-CSharp
+        m_MethodName: cambioTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 525043774}
+        m_TargetAssemblyTypeName: Bichos, Assembly-CSharp
+        m_MethodName: Ataque2
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

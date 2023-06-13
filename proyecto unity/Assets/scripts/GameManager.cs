@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
     public bool myTurno = true;
     public GameObject Acciones;
     public GameObject[] bichos;
-    public Image[] barrasHP; 
+    public Image[] barrasHP;
+    public bool numeroAparicion = true;
 
     void Awake()
     {
@@ -49,9 +50,11 @@ public class GameManager : MonoBehaviour
         {
             bichos[1].GetComponent<Bichos>().Ataque2();
         }
+
     }
+
        
-        void Update()
+    void Update()
     {
         
     }
