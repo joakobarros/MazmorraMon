@@ -7,20 +7,15 @@ public class Bichos : MonoBehaviour
 {
     public float HP;
     public float HPMax;
-    public float HPActual;
     public float speed;
     public int prioridad;
-    public GameObject bichoEscena;
     public GameObject target;
-    public GameObject target2;
-    public string jugador;
     public Image vida;
-    public bool habilitado = true;
-   
-    
+    public int count = 0;
+
     void Start()
     {
-       
+        vida.GetComponent<Image>().color = Color.green;
     }
 
     public void Ataque()
@@ -32,43 +27,56 @@ public class Bichos : MonoBehaviour
 
         target.GetComponent<Bichos>().HP -= Random.Range(15, 20);
         target.GetComponent<Renderer>().material.color = Color.red;
-        Invoke("color1", 1f);
+        Invoke("color", 0.5f);
     }
 
     public void Ataque2()
     {
-        bichoEscena.GetComponent<Bichos>().HP -= Random.Range(15, 20);
-        bichoEscena.GetComponent<Renderer>().material.color = Color.red;
-        Invoke("color2", 1f);
+        if (prioridad == 1)
+        {
+            GameManager.my.Ultimo2();
+        }
+
+        target.GetComponent<Bichos>().HP -= Random.Range(20, 30);
+        target.GetComponent<Renderer>().material.color = Color.red;
+        Invoke("color", 0.5f);
     }
 
-    public void cambioTarget()
+    public void AtaqueEnemigo()
     {
-        if (bichoEscena == target)
+        if (prioridad == 1)
         {
-            bichoEscena = target2;
+            GameManager.my.Ultimo();
         }
-        else
-        {
-            bichoEscena = target;
-        }
+
+        target.GetComponent<Bichos>().HP -= Random.Range(10, 15);
+        target.GetComponent<Renderer>().material.color = Color.red;
+        Invoke("color", 0.5f);
     }
 
-    public void color1()
+    public void color()
     {
         target.GetComponent<Renderer>().material.color = Color.white;
     }
 
-    public void color2()
-    {
-        bichoEscena.GetComponent<Renderer>().material.color = Color.white;
-    }
- 
- 
-
     void Update()
     {
-
         vida.fillAmount = (HP) / HPMax;
+
+        if (HP <= 40 && HP > 20)
+        {
+            vida.GetComponent<Image>().color = Color.yellow;
+        }
+
+        if (HP <= 20 && HP > 0)
+        {
+            vida.GetComponent<Image>().color = Color.red;
+        }
+
+        if(HP <= 0)
+        {
+            count = 1;
+        }
+ 
     }
 }
