@@ -10,21 +10,13 @@ public class Bichos : MonoBehaviour
     public float speed;
     public int prioridad;
     public GameObject target;
-    public string jugador;
     public Image vida;
-   
-    
+    public int count = 0;
+
     void Start()
     {
-       
+        vida.GetComponent<Image>().color = Color.green;
     }
-
-    public void FinAtaque()
-    {
-        //target.GetComponent<Renderer>().material.color = Color.red;
-        //target.GetComponent<Bichos>().HP -= 20;
-    }
-   
 
     public void Ataque()
     {
@@ -33,12 +25,58 @@ public class Bichos : MonoBehaviour
             GameManager.my.Ultimo();
         }
 
-        target.GetComponent<Bichos>().HP -= Random.Range(15,20);
+        target.GetComponent<Bichos>().HP -= Random.Range(15, 20);
+        target.GetComponent<Renderer>().material.color = Color.red;
+        Invoke("color", 0.5f);
     }
-    
-   
+
+    public void Ataque2()
+    {
+        if (prioridad == 1)
+        {
+            GameManager.my.Ultimo2();
+        }
+
+        target.GetComponent<Bichos>().HP -= Random.Range(20, 30);
+        target.GetComponent<Renderer>().material.color = Color.red;
+        Invoke("color", 0.5f);
+    }
+
+    public void AtaqueEnemigo()
+    {
+        if (prioridad == 1)
+        {
+            GameManager.my.Ultimo();
+        }
+
+        target.GetComponent<Bichos>().HP -= Random.Range(10, 15);
+        target.GetComponent<Renderer>().material.color = Color.red;
+        Invoke("color", 0.5f);
+    }
+
+    public void color()
+    {
+        target.GetComponent<Renderer>().material.color = Color.white;
+    }
+
     void Update()
     {
         vida.fillAmount = (HP) / HPMax;
+
+        if (HP <= 40 && HP > 20)
+        {
+            vida.GetComponent<Image>().color = Color.yellow;
+        }
+
+        if (HP <= 20 && HP > 0)
+        {
+            vida.GetComponent<Image>().color = Color.red;
+        }
+
+        if(HP <= 0)
+        {
+            count = 1;
+        }
+ 
     }
 }

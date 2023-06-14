@@ -5,6 +5,9 @@ using UnityEngine.UI;
  
 public class Controller : MonoBehaviour
 {
+    public float color1;
+    public float color2;
+    public float color3;
     public int populationSize = 4;
     public GameObject creaturePrefab;
     public List<GameObject> population;
@@ -49,7 +52,15 @@ public class Controller : MonoBehaviour
             creatureDNA.b = Random.Range(0.0f, 1.0f);
  
             creature.GetComponent<Renderer>().material.color = new Color(creatureDNA.r, creatureDNA.g, creatureDNA.b);
- 
+
+            color1 = creatureDNA.r;
+            Debug.Log(color1);
+            color2 = creatureDNA.g;
+            Debug.Log(color2);
+            color3 = creatureDNA.b;
+            Debug.Log(color3);
+
+
             // Add the creature to the population
             population.Add(creature);
         }
