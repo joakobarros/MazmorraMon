@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    private Controller criatura;
+
     public static GameManager my;
     public bool myTurno = true;
     public GameObject Acciones;
@@ -17,12 +17,10 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        criatura = GetComponent<Controller>();
         my = this;
     }
     void Start()
     {
-        bichos[1].GetComponent<Renderer>().material.color = new Color(criatura.color1, criatura.color2, criatura.color3);
     }
 
     public void Luchar()

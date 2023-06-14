@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Escenas : MonoBehaviour
 {
+    public Material material;
+    private DNA DNA;
     public void escenaInicio()
     {
         SceneManager.LoadScene("start");
@@ -17,6 +19,8 @@ public class Escenas : MonoBehaviour
 
     public void escenaCombate()
     {
+        DNA = this.GetComponent<DNA>();
+        material.color = new Color(DNA.r, DNA.g, DNA.b);
         SceneManager.LoadScene("escena1");
     }
 
@@ -24,10 +28,10 @@ public class Escenas : MonoBehaviour
     {
         SceneManager.LoadScene("end");
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
 
-        if (other.tag == "Player")
+        if (other.gameObject.name == "Player")
         {
             escenaCombate();
         }

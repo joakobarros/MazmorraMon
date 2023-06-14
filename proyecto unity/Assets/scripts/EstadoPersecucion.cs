@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EstadoPersecucion: MonoBehaviour
 {
-    private Escenas escenas;
     private MaquinaDeEstados maquinaDeEstados;
     private NavMesh navMesh;
     private Vision vision;
@@ -12,7 +11,6 @@ public class EstadoPersecucion: MonoBehaviour
 
     void Awake()
     {
-        escenas = GetComponent<Escenas>();
         maquinaDeEstados = GetComponent<MaquinaDeEstados>();
         navMesh = GetComponent<NavMesh>();
         vision = GetComponent<Vision>();
