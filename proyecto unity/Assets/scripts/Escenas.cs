@@ -8,6 +8,7 @@ public class Escenas : MonoBehaviour
 {
     public Material material;
     private DNA DNA;
+    public int contar = 0;
     public void escenaInicio()
     {
         SceneManager.LoadScene("start");
@@ -24,17 +25,24 @@ public class Escenas : MonoBehaviour
         SceneManager.LoadScene("escena1");
     }
 
-    public void escenaFinal()
+    public void escenaCombate2()
     {
-        SceneManager.LoadScene("end");
+     
+        SceneManager.LoadScene("escena2");
     }
+
     private void OnCollisionEnter(Collision other)
     {
 
-        if (other.gameObject.name == "Player")
+        if (other.gameObject.name == "Player" && contar == 0)
         {
-            escenaCombate();
+   
+            escenaCombate(); 
         }
+        else
+        {
+            
+            escenaCombate2();
+        }   
     }
-
 }

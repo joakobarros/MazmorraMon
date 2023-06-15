@@ -12,6 +12,7 @@ public class Bichos : MonoBehaviour
     public GameObject target;
     public Image vida;
     public int count = 0;
+    public Material material;
 
     void Start()
     {
@@ -56,7 +57,7 @@ public class Bichos : MonoBehaviour
 
     public void color()
     {
-        target.GetComponent<Renderer>().material.color = Color.white;
+        this.GetComponent<Renderer>().material.color = material.color;
     }
 
     void Update()
