@@ -850,7 +850,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "CREADORES:\n\n-JOAKO BARROS\n-PEDRO DEPAULI\n-M\xC1XIMO RAVAZZANI"
+  m_Text: "CREADORES:\n\n-JOAQU\xCDN BARROS\n-PEDRO DEPAULI\n-M\xC1XIMO RAVAZZANI"
 --- !u!222 &1772378161
 CanvasRenderer:
   m_ObjectHideFlags: 0

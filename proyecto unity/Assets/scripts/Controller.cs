@@ -8,15 +8,13 @@ public class Controller : MonoBehaviour
     public float color1;
     public float color2;
     public float color3;
-    public int populationSize = 4;
+    public int populationSize;
     public GameObject creaturePrefab;
     public List<GameObject> population;
-    public float populationLifetime = 50.0f;
+    public float populationLifetime;
     public int mutationRate; // Chance of a mutation occuring, 0 - 100%
  
-    public Text generationText;
     private int currentGeneration = 1;
-    public Text timeText;
     private float lifetimeLeft;
 
     public Transform spawnPoint;

@@ -2717,13 +2717,11 @@ MonoBehaviour:
   color1: 0
   color2: 0
   color3: 0
-  populationSize: 4
+  populationSize: 10
   creaturePrefab: {fileID: 2487467393135919620, guid: c7ab35e0958c77a4cb63fe0ee33291d5, type: 3}
   population: []
-  populationLifetime: 50
+  populationLifetime: 20
   mutationRate: 0
-  generationText: {fileID: 0}
-  timeText: {fileID: 0}
   spawnPoint: {fileID: 1849653502}
 --- !u!4 &691013390
 Transform:
